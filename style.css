@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: rgb(255, 103, 117);
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 64px;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.left-container {
+  color: white;
+  flex: 1;
+}
+.left-container > p {
+  font-size: 14px;
+  margin-top: 16px;
+}
+.right-container {
+  flex: 1;
+}
+.banner {
+  padding: 16px 64px;
+  background-color: purple;
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 16px;
+  box-shadow: 2px 9px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 9px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 9px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.form-container {
+  background-color: white;
+  padding: 24px;
+  box-shadow: 2px 9px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 9px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 9px 14px 0px rgba(0, 0, 0, 0.75);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+input {
+  padding: 14px;
+}
+button {
+  padding: 14px;
+  background-color: green;
+  border: none;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+form + p {
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+  color: gray;
+}
+
+form + p > a {
+  text-decoration: none;
+  color: red;
+}
+form + p > a:hover {
+  text-decoration: underline;
+}
+.form-container,
+.banner,
+button {
+  border-radius: 8px;
+}
+@media only screen and (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .left-container {
+    text-align: center;
+  }
+}
